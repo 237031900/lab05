@@ -9,8 +9,9 @@
     "koa-bodyparser": "^4.4.1",
     "koa-json": "^2.0.2",
     "koa-logger": "^3.2.1",
-    "koa-req-validation": "^0.17.0",
     "koa-router": "^12.0.1",
-    "yarn": "^1.22.21"
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.1"
   }
 }
