@@ -6,10 +6,12 @@ import json from "koa-json";
 const app: Koa = new Koa();
 
 import { router as articles } from "./routes/articles";
+import { router as special } from "./routes/special";
 
 app.use(json());
 app.use(logger());
 app.use(articles.routes());
+app.use(special.routes());
 app.use(async (ctx: RouterContext, next: any) => {
   try {
     await next()
